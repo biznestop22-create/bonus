@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>India Exclusive · 100% First Deposit Bonus · Cricket Betting</title>
+  <meta name="description" content="Bet on cricket with 1win partner offer for India. 100% bonus on first deposit, fast registration, high odds. 18+. Play responsibly." />
+  <meta name="theme-color" content="#0b0f1a" />
+
+  <!-- OG -->
+  <meta property="og:title" content="100% First Deposit Bonus · Bet on Cricket" />
+  <meta property="og:description" content="Fast signup, top odds, secure payments. 18+ Play responsibly." />
+  <meta property="og:image" content="india-aus-banner.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <style>
+    :root{
+      --bg:#0a0f17;
+      --panel: rgba(255,255,255,0.06);
+      --border: rgba(255,255,255,0.10);
+      --text:#eaf2ff;
+      --muted:#b9c7e6;
+      --accent:#7df07c;
+      --accent-2:#56b4d3;
+    }
+
+    /* --- Base --- */
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial;
+      color:var(--text);
+      background: radial-gradient(1200px 800px at 10% -10%, #132035 0%, rgba(10,15,23,0) 60%),
+                  radial-gradient(900px 600px at 110% 10%, #0e1b2a 0%, rgba(10,15,23,0) 55%),
+                  radial-gradient(800px 900px at 50% 120%, #0f1420 0%, rgba(10,15,23,0) 60%),
+                  linear-gradient(180deg, #0b0f1a 0%, #0a0f17 100%);
+      overflow-x:hidden;
+    }
+
+    /* Soft animated blobs */
+    .bg-blob{
+      position:fixed; inset:0; pointer-events:none; z-index:-1; filter: blur(60px); opacity:.5;
+      background:
+        radial-gradient(300px 220px at 15% 20%, rgba(125,240,124,.35), transparent 60%),
+        radial-gradient(420px 280px at 85% 15%, rgba(86,180,211,.30), transparent 60%),
+        radial-gradient(380px 260px at 70% 85%, rgba(125,240,124,.25), transparent 60%);
+      mix-blend-mode:screen;
+      animation: float 16s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%,100% { transform: translateY(0) }
+      50%     { transform: translateY(-20px) }
+    }
+    @media (prefers-reduced-motion: reduce){
+      .bg-blob{ animation:none }
+    }
+
+    .container{max-width:1100px; margin:0 auto; padding:24px}
+
+    header{
+      display:flex; justify-content:space-between; align-items:center; gap:16px; padding:8px 0;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px; letter-spacing:.3px; font-weight:700;
+    }
+    .brand .dot{width:10px; height:10px; border-radius:50%; background:linear-gradient(135deg,var(--accent),#4ec84a); box-shadow:0 0 20px rgba(125,240,124,.8)}
+    nav{display:flex; gap:16px; flex-wrap:wrap; font-size:14px; color:var(--muted)}
+    nav a{color:var(--muted); text-decoration:none}
+    nav a:hover{color:var(--text)}
+
+    /* --- Hero --- */
+    .hero{
+      margin-top:18px;
+      display:grid; grid-template-columns:1.1fr .9fr; gap:24px; align-items:stretch;
+    }
+    @media (max-width: 900px){ .hero{ grid-template-columns:1fr } }
+
+    .panel{
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: clamp(18px, 3vw, 28px);
+      box-shadow: 0 20px 50px rgba(0,0,0,.40);
+      backdrop-filter: blur(14px);
+    }
+
+    h1{
+      margin:0 0 14px 0;
+      font-size: clamp(28px, 5vw, 44px);
+      line-height:1.15;
+      letter-spacing:.2px;
+      background: linear-gradient(90deg, var(--text), #cfe9ff 30%, #b0ffd0 70%, #eaffff);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+    .sub{
+      color:var(--muted);
+      font-size: clamp(14px, 2.4vw, 18px);
+    }
+
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 12px; border-radius:999px;
+      background:linear-gradient(135deg, rgba(125,240,124,.14), rgba(86,180,211,.14));
+      border:1px solid rgba(255,255,255,.12);
+      color:#dfffe3; font-weight:700; margin:10px 0 16px 0;
+    }
+    .badge .pill{background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.18); padding:4px 10px; border-radius:999px; color:#eaffef}
+
+    .cta{
+      display:flex; flex-wrap:wrap; gap:12px; margin-top:18px;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:14px 18px; border-radius:14px; font-weight:800; text-decoration:none; font-size:16px;
+      transition:transform .16s ease, box-shadow .16s ease, background .16s ease;
+    }
+    .btn-primary{
+      color:#071005;
+      background:linear-gradient(135deg, var(--accent), #4ec84a);
+      box-shadow:0 0 0 0 rgba(125,240,124,.0);
+      animation: glow 2.2s infinite;
+    }
+    @keyframes glow {
+      0%,100% { box-shadow:0 0 18px rgba(125,240,124,.45) }
+      50%     { box-shadow:0 0 32px rgba(125,240,124,.75) }
+    }
+    .btn-primary:hover{ transform: translateY(-1px) }
+    .btn-ghost{
+      color:var(--text); border:1px solid rgba(255,255,255,.18); background:transparent;
+    }
+    a:focus-visible, button:focus-visible{ outline:3px solid var(--accent); outline-offset:2px; border-radius:10px }
+
+    /* --- Right card / optional banner --- */
+    .hero-media{
+      display:flex; flex-direction:column; gap:14px;
+    }
+    .media{
+      position:relative; overflow:hidden; border-radius:24px; min-height:260px;
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border:1px solid var(--border);
+    }
+    .media img{ width:100%; height:100%; object-fit:cover; display:block; opacity:.95; filter:saturate(1.05) contrast(1.02) }
+    .media .ribbon{
+      position:absolute; left:16px; top:16px;
+      padding:8px 12px; border-radius:999px; font-weight:800; font-size:12px;
+      background:rgba(0,0,0,.45); color:#eafff4; border:1px solid rgba(255,255,255,.18); backdrop-filter: blur(6px)
+    }
+
+    /* --- Features --- */
+    .features{
+      margin-top:26px;
+      display:grid; grid-template-columns: repeat(4, 1fr); gap:16px;
+    }
+    @media (max-width: 900px){ .features{ grid-template-columns:1fr 1fr } }
+    @media (max-width: 520px){ .features{ grid-template-columns:1fr } }
+
+    .feat{
+      padding:18px; border-radius:18px; border:1px solid var(--border); background:var(--panel);
+    }
+    .feat h4{ margin:8px 0 6px 0; font-size:16px }
+    .feat p{ margin:0; color:var(--muted); font-size:14px }
+
+    /* --- Terms & footer --- */
+    .terms{ margin:26px 0 10px 0; color:#cfe4ff; font-size:13px }
+    footer{ color:#8aa0c4; font-size:12px; padding:20px 0 40px 0 }
+
+    /* Reduce motion */
+    @media (prefers-reduced-motion: reduce){
+      .btn-primary{ animation:none }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-blob" aria-hidden="true"></div>
+
+  <div class="container">
+    <header>
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        <span>India Sports</span>
+      </div>
+      <nav>
+        <a href="#bonus">Bonus</a>
+        <a href="#cricket">Cricket</a>
+        <a href="#terms">T&amp;C</a>
+      </nav>
+    </header>
+
+    <main class="hero" id="cricket">
+      <!-- Left: copy -->
+      <section class="panel">
+        <div class="badge">Welcome Offer <span class="pill">+100% First Deposit</span></div>
+        <h1>Bet on Cricket with a Head Start</h1>
+        <p class="sub">
+          Fast sign-up, high odds on top cricket matches, and secure payouts.
+          Claim your <strong>100% bonus</strong> on the first deposit and start with an edge.
+        </p>
+
+        <div class="cta">
+          <a class="btn btn-primary" data-offer-link target="_blank" rel="noopener sponsored nofollow" aria-label="Claim 100% first deposit bonus and bet now">
+            🏏 Claim Bonus &amp; Bet Now
+          </a>
+          <a class="btn btn-ghost" href="#terms">See Terms</a>
+        </div>
+
+        <div id="bonus" class="features">
+          <div class="feat">
+            <div>⚡</div>
+            <h4>Fast Registration</h4>
+            <p>Get started in under two minutes.</p>
+          </div>
+          <div class="feat">
+            <div>🏆</div>
+            <h4>High Odds</h4>
+            <p>Top markets for major cricket fixtures.</p>
+          </div>
+          <div class="feat">
+            <div>💸</div>
+            <h4>100% First Deposit</h4>
+            <p>Double your balance instantly.</p>
+          </div>
+          <div class="feat">
+            <div>🔒</div>
+            <h4>Secure Payments</h4>
+            <p>Trusted deposits & withdrawals.</p>
+          </div>
+        </div>
+
+        <p class="terms" id="terms">
+          18+ only. New users from India. 100% bonus applies on first deposit. T&amp;C apply. Play responsibly.
+        </p>
+      </section>
+
+      <!-- Right: media card (use your banner if you have it) -->
+      <aside class="hero-media">
+        <div class="media panel" aria-label="Cricket highlight">
+          <!-- Drop your creative file as india-aus-banner.jpeg in the same folder -->
+          <img src="india-aus-banner.jpeg" alt="India vs Australia — Cricket highlight">
+          <div class="ribbon">Match of the Day</div>
+        </div>
+
+        <div class="panel">
+          <strong style="display:block; margin-bottom:6px;">Why players choose us</strong>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; color:var(--muted); font-size:14px">
+            <div>• Fast payouts</div>
+            <div>• No hidden fees</div>
+            <div>• Mobile friendly</div>
+            <div>• 24/7 support</div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      © 2025 · 18+ Play responsibly. This page promotes a partner offer.
+    </footer>
+  </div>
+
+  <script>
+    "use strict";
+    // ===== Tracking / offer link =====
+    const BASE_OFFER = "https://1wsfog.com/sport/list?open=register&p=gsjg"; // your ref link (sports)
+    const CLICKID_PARAM = "clickid";
+    const LP_TAG = "lp-india-sports-modern";
+
+    function buildTargetUrl(){
+      const url = new URL(BASE_OFFER);
+      const src = new URLSearchParams(window.location.search);
+
+      // clickid from query/localStorage or generate
+      let clickid = src.get(CLICKID_PARAM) || localStorage.getItem("clickid");
+      if(!clickid){
+        clickid = Math.random().toString(36).slice(2) + Date.now().toString(36);
+      }
+      localStorage.setItem("clickid", clickid);
+      url.searchParams.set(CLICKID_PARAM, clickid);
+
+      // pass-through all incoming params (utm, fbclid, gclid, etc.)
+      for (const [k, v] of src.entries()){
+        if (k.toLowerCase() !== CLICKID_PARAM) url.searchParams.set(k, v);
+      }
+      // landing tag
+      url.searchParams.set("lp", LP_TAG);
+      return url.toString();
+    }
+
+    function setOfferLinks(){
+      const href = buildTargetUrl();
+      document.querySelectorAll("[data-offer-link]").forEach(a => a.href = href);
+    }
+    document.addEventListener("DOMContentLoaded", setOfferLinks);
+
+    // optional: smooth redirect + click log
+    document.addEventListener("click", (e)=>{
+      const a = e.target.closest("a[data-offer-link]");
+      if(!a) return;
+      const href = a.getAttribute("href");
+      if(!href) return;
+
+      // lightweight click log (optional; requires /click-log endpoint on your server)
+      try{
+        const u = new URL(href, location.href);
+        const payload = JSON.stringify({
+          clickid: u.searchParams.get(CLICKID_PARAM) || "",
+          ts: Date.now(),
+          ref: document.referrer || ""
+        });
+        navigator.sendBeacon("/click-log", payload);
+      }catch(_){}
+
+      // keep default behavior (open in new tab)
+    });
+  </script>
+</body>
+</html>
